@@ -2,6 +2,7 @@
 
 This software accompanies the 2017 NIPS paper [Protein Interface Prediction using Graph Convolutional Networks](https://papers.nips.cc/paper/7231-protein-interface-prediction-using-graph-convolutional-networks).
 We implemented multiple versions of graph convolution and applied them to the problem of protein interface prediction.
+This work was supported by the National Science Foundation under grant no DBI-1564840.
 
 ## Setup ##
 ### Requirements ###
