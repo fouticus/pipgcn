@@ -45,7 +45,7 @@ Alternatively you may run ```run_experiments.sh```, which contains expressions f
 
 Please direct any questions to:
 
-* Alex Fout (fout@colostate.edu)
-* Jonathon Byrd (jonbyrd@colostate.edu)
-* Basir Shariat (basir@cs.colostate.edu
-* Asa Ben-Hur (asa@cs.colostate.edu)
+* Alex Fout (fout[at]colostate.edu)
+* Jonathon Byrd (jonbyrd[at]colostate.edu)
+* Basir Shariat (basir[at]cs.colostate.edu
+* Asa Ben-Hur (asa[at]cs.colostate.edu)
