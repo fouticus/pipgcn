@@ -8,6 +8,7 @@ This work was supported by the National Science Foundation under grant no DBI-15
 ### Requirements ###
 
 - python 2.7
+- PyYAML 3.12
 - numpy 1.13.3
 - scikit-learn 0.19.1
 - tensorflow 1.0.1
