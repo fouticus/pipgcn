@@ -1,0 +1,14 @@
+num_epochs: 80
+minibatch_size: 128
+test_batch_size: 2000
+experiments:
+- - "1_layer"
+  - train_data_file: "diffc_g2_p5_train.cpkl"
+    test_data_file: "diffc_g2_p5_test.cpkl"
+    layer_args: {dropout_keep_prob: 1.0}
+    layers:
+    - ["diffusion_conv"]
+    - ["merge", {}, ["merge"]]
+    - ["dense", {out_dims: 512}]
+    - ["dense", {out_dims: 1, nonlin: False}]
+    - ["average_predictions"]

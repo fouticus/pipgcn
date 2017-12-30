@@ -1,0 +1,50 @@
+num_epochs: 80
+minibatch_size: 128
+test_batch_size: 2000
+experiments:
+- - "1_layer"
+  - train_data_file: "train.cpkl"
+    test_data_file: "test.cpkl"
+    layer_args: {dropout_keep_prob: 0.5}
+    layers:
+    - ["deep_tensor_conv", {factors: 256}]
+    - ["merge", {}, ["merge"]]
+    - ["dense", {out_dims: 512}]
+    - ["dense", {out_dims: 1, nonlin: False}]
+    - ["average_predictions"]
+- - "2_layer"
+  - train_data_file: "train.cpkl"
+    test_data_file: "test.cpkl"
+    layer_args: {dropout_keep_prob: 0.5}
+    layers:
+    - ["deep_tensor_conv", {factors: 256}]
+    - ["deep_tensor_conv", {factors: 512}]
+    - ["merge", {}, ["merge"]]
+    - ["dense", {out_dims: 512}]
+    - ["dense", {out_dims: 1, nonlin: False}]
+    - ["average_predictions"]
+- - "3_layer"
+  - train_data_file: "train.cpkl"
+    test_data_file: "test.cpkl"
+    layer_args: {dropout_keep_prob: 0.5}
+    layers:
+    - ["deep_tensor_conv", {factors: 256}]
+    - ["deep_tensor_conv", {factors: 256}]
+    - ["deep_tensor_conv", {factors: 512}]
+    - ["merge", {}, ["merge"]]
+    - ["dense", {out_dims: 512}]
+    - ["dense", {out_dims: 1, nonlin: False}]
+    - ["average_predictions"]
+- - "4_layer"
+  - train_data_file: "train.cpkl"
+    test_data_file: "test.cpkl"
+    layer_args: {dropout_keep_prob: 0.5}
+    layers:
+    - ["deep_tensor_conv", {factors: 256}]
+    - ["deep_tensor_conv", {factors: 256}]
+    - ["deep_tensor_conv", {factors: 512}]
+    - ["deep_tensor_conv", {factors: 512}]
+    - ["merge", {}, ["merge"]]
+    - ["dense", {out_dims: 512}]
+    - ["dense", {out_dims: 1, nonlin: False}]
+    - ["average_predictions"]
