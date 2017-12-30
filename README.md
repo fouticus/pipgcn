@@ -30,7 +30,7 @@ Consider setting the following environment variables for CUDA use:
 
 ### Data ###
 
-To run the provided experiments, you need the cPickle files found [here](https://zenodo.org/record/1127774#.WkLewGGnGcY).
+To run the provided experiments, you need the pickle files found [here](https://zenodo.org/record/1127774#.WkLewGGnGcY).
 
 
 ## Running Experiments ##
